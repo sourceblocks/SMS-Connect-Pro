@@ -1,0 +1,40 @@
+#wrapper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    transition: all 0.3s;
+  }
+  
+  .sidebar.collapsed {
+    min-width: 80px;
+    max-width: 80px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    padding-left: 250px;
+    transition: all 0.3s;
+  }
+  
+  .sidebar.collapsed + #page-content-wrapper {
+    padding-left: 80px;
+  }
+  
+  .nav-link {
+    padding: 1rem;
+  }
+  
+  .nav-link:hover {
+    background-color: #495057;
+  }
+  
+  .nav-link .ml-2 {
+    margin-left: 8px;
+  }
+  
